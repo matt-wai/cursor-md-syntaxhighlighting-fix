@@ -55,15 +55,56 @@
       "captures": { "0": { "name": "punctuation.definition.comment.html" } }
     },
     "heading-atx": {
-      "name": "markup.heading.markdown",
-      "match": "^(#{1,6})\\s+(.+?)(?:\\s+\\1)?\\s*$",
-      "captures": {
-        "1": { "name": "punctuation.definition.heading.markdown" },
-        "2": {
-          "name": "entity.name.section.markdown",
-          "patterns": [{ "include": "#inline" }]
+      "patterns": [
+        {
+          "name": "heading.6.markdown markup.heading.6.markdown",
+          "match": "^(######)[ \\t]+(.+?)[ \\t]*$",
+          "captures": {
+            "1": { "name": "punctuation.definition.heading.markdown" },
+            "2": { "name": "entity.name.section.markdown", "patterns": [{ "include": "#inline" }] }
+          }
+        },
+        {
+          "name": "heading.5.markdown markup.heading.5.markdown",
+          "match": "^(#####)[ \\t]+(.+?)[ \\t]*$",
+          "captures": {
+            "1": { "name": "punctuation.definition.heading.markdown" },
+            "2": { "name": "entity.name.section.markdown", "patterns": [{ "include": "#inline" }] }
+          }
+        },
+        {
+          "name": "heading.4.markdown markup.heading.4.markdown",
+          "match": "^(####)[ \\t]+(.+?)[ \\t]*$",
+          "captures": {
+            "1": { "name": "punctuation.definition.heading.markdown" },
+            "2": { "name": "entity.name.section.markdown", "patterns": [{ "include": "#inline" }] }
+          }
+        },
+        {
+          "name": "heading.3.markdown markup.heading.3.markdown",
+          "match": "^(###)[ \\t]+(.+?)[ \\t]*$",
+          "captures": {
+            "1": { "name": "punctuation.definition.heading.markdown" },
+            "2": { "name": "entity.name.section.markdown", "patterns": [{ "include": "#inline" }] }
+          }
+        },
+        {
+          "name": "heading.2.markdown markup.heading.2.markdown",
+          "match": "^(##)[ \\t]+(.+?)[ \\t]*$",
+          "captures": {
+            "1": { "name": "punctuation.definition.heading.markdown" },
+            "2": { "name": "entity.name.section.markdown", "patterns": [{ "include": "#inline" }] }
+          }
+        },
+        {
+          "name": "heading.1.markdown markup.heading.1.markdown",
+          "match": "^(#)[ \\t]+(.+?)[ \\t]*$",
+          "captures": {
+            "1": { "name": "punctuation.definition.heading.markdown" },
+            "2": { "name": "entity.name.section.markdown", "patterns": [{ "include": "#inline" }] }
+          }
         }
-      }
+      ]
     },
     "heading-setext": {
       "patterns": [

@@ -2,7 +2,7 @@
   "name": "markdown-syntax-enhanced",
   "displayName": "Markdown Syntax Enhanced",
   "description": "Enhanced markdown syntax highlighting for Cursor/VS Code with full TextMate grammar support",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "matt-wai",
   "repository": {
     "type": "git",
