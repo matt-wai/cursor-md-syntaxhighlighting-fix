@@ -1,0 +1,89 @@
+{
+  "name": "markdown-syntax-enhanced",
+  "displayName": "Markdown Syntax Enhanced",
+  "description": "Enhanced markdown syntax highlighting for Cursor/VS Code with full TextMate grammar support",
+  "version": "1.0.0",
+  "publisher": "matt-wai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matt-wai/cursor-md-syntaxhighlighting-fix"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "markdown",
+    "syntax",
+    "highlighting",
+    "md"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "markdown",
+        "aliases": [
+          "Markdown",
+          "md"
+        ],
+        "extensions": [
+          ".md",
+          ".mdc",
+          ".markdown",
+          ".mdown",
+          ".mkdn",
+          ".mkd",
+          ".mdwn",
+          ".mdtxt",
+          ".mdtext"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "markdown",
+        "scopeName": "text.html.markdown",
+        "path": "./syntaxes/markdown.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.html": "html",
+          "source.js": "javascript",
+          "source.ts": "typescript",
+          "source.tsx": "typescriptreact",
+          "source.jsx": "javascriptreact",
+          "source.json": "json",
+          "source.yaml": "yaml",
+          "source.python": "python",
+          "source.ruby": "ruby",
+          "source.go": "go",
+          "source.rust": "rust",
+          "source.shell": "shellscript",
+          "source.css": "css",
+          "source.scss": "scss",
+          "source.sql": "sql",
+          "source.graphql": "graphql",
+          "source.dockerfile": "dockerfile",
+          "source.diff": "diff",
+          "source.c": "c",
+          "source.cpp": "cpp",
+          "source.java": "java",
+          "source.kotlin": "kotlin",
+          "source.swift": "swift",
+          "source.php": "php",
+          "source.lua": "lua",
+          "source.r": "r",
+          "source.toml": "toml",
+          "text.xml": "xml"
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.22.0"
+  }
+}
